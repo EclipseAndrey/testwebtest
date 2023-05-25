@@ -53,73 +53,6 @@ import 'package:testwebtest/models/type.dart';
 ///   ]),
 ///
 ///
-// List<Level> levels = [
-//   Level(151, [
-//     Platform(3, LevelType.increment, 8070, 1),
-//     Platform(1, LevelType.upp, 2, 1),
-//   ]),
-//   Level(152, [
-//     Platform(3, LevelType.monster, 53280, 2),
-//     Platform(1, LevelType.monster, 100640, 3),
-//   ]),
-//   Level(153, [
-//     Platform(1, LevelType.increment, 6510),
-//     Platform(3, LevelType.minus, 45570),
-//   ]),
-//   Level(154, [
-//     Platform(3, LevelType.monster, 64440),
-//     Platform(1, LevelType.increment, 7160),
-//   ]),
-//   Level(155, [
-//     Platform(4, LevelType.monster, 78800),
-//   ]),
-//   Level(156, [
-//     Platform(1, LevelType.monster, 60690),
-//     Platform(3, LevelType.increment, 8670),
-//   ]),
-//   Level(157, [
-//     Platform(1, LevelType.energy, 1),
-//     Platform(2, LevelType.monster, 47700),
-//     Platform(1, LevelType.monster, 57240),
-//   ]),
-//   Level(158, [
-//     Platform(1, LevelType.monster, 73500),
-//     Platform(3, LevelType.increment, 15750),
-//   ]),
-//   Level(159, [
-//     Platform(1, LevelType.energy, 1),
-//     Platform(2, LevelType.increment, 1),
-//     Platform(1, LevelType.monster, 74750),
-//   ]),
-//   Level(160, [
-//     Platform(4, LevelType.monster, 48900),
-//   ]),
-
-// Level(116, [
-//   Platform(3, LevelType.increment, 98300),
-//   Platform(1, LevelType.monster, 1470000),
-// ]),
-// Level(114, [
-//   Platform(3, LevelType.increment, 98300),
-//   Platform(1, LevelType.monster, 1470000),
-// ]),
-// Level(114, [
-//   Platform(3, LevelType.increment, 98300),
-//   Platform(1, LevelType.monster, 1470000),
-// ]),
-// Level(114, [
-//   Platform(3, LevelType.increment, 98300),
-//   Platform(1, LevelType.monster, 1470000),
-// ]),
-// Level(114, [
-//   Platform(3, LevelType.increment, 98300),
-//   Platform(1, LevelType.monster, 1470000),
-// ]),
-// Level(114, [
-//   Platform(3, LevelType.increment, 98300),
-//   Platform(1, LevelType.monster, 1470000),
-// ]),
-// ];
 
 List<Level> levels = [
   // Level(20, [
@@ -693,11 +626,116 @@ List<Level> levels = [
   Level(160, [
     Platform(4, LevelType.monster, 161000000, 3),
   ]),
+  Level(161, [
+    Platform(2, LevelType.minus, 30800000, 2),
+    Platform(2, LevelType.dec, 2, 1),
+  ]),
+  Level(162, [
+    Platform(1, LevelType.dec, 2, 1),
+    Platform(3, LevelType.minus, 30800000, 2),
+  ]),
+  Level(163, [
+    Platform(2, LevelType.minus, 37200000, 2),
+    Platform(2, LevelType.dec, 2, 1),
+  ]),
+  Level(164, [
+    Platform(1, LevelType.minus, 20400000, 2),
+    Platform(2, LevelType.minus, 40800000, 2),
+    Platform(1, LevelType.dec, 2, 1),
+  ]),
+  Level(165, [
+    Platform(1, LevelType.energy, 1, 1),
+    Platform(2, LevelType.monster, 135000000, 2),
+    Platform(1, LevelType.increment, 157500000, 2),
+  ]),
+  Level(166, [
+    Platform(2, LevelType.minus, 24700000, 2),
+    Platform(2, LevelType.increment, 27400000, 2),
+  ]),
+  Level(167, [
+    Platform(1, LevelType.increment, 217600000, 2),
+    Platform(3, LevelType.upp, 2, 1),
+  ]),
+  Level(168, [
+    Platform(2, LevelType.energy, 1, 1),
+    Platform(2, LevelType.increment, 239200000, 2),
+  ]),
+  Level(169, [
+    Platform(1, LevelType.upp, 2, 1),
+    Platform(3, LevelType.monster, 329000000, 2),
+  ]),
+  Level(170, [
+    Platform(4, LevelType.monster, 362000000, 2),
+  ]),
+  Level(171, [
+    Platform(2, LevelType.monster, 278600000, 2),
+    Platform(2, LevelType.increment, 119400000, 2),
+  ]),
+  Level(172, [
+    Platform(3, LevelType.minus, 43800000, 2),
+    Platform(1, LevelType.monster, 350400000, 2),
+  ]),
+  Level(173, [
+    Platform(1, LevelType.monster, 413800000, 2),
+    Platform(3, LevelType.minus, 48200000, 2),
+  ]),
+  Level(174, [
+    Platform(3, LevelType.increment, 159000000, 2),
+    Platform(1, LevelType.energy, 1, 1),
+  ]),
+  Level(175, [
+    Platform(4, LevelType.monster, 583000000, 2),
+  ]),
+  Level(176, [
+    Platform(1, LevelType.minus, 192600000, 2),
+    Platform(2, LevelType.monster, 513600000, 2),
+    Platform(1, LevelType.increment, 96300000, 2),
+  ]),
+  Level(177, [
+    Platform(1, LevelType.upp, 2, 1),
+    Platform(2, LevelType.monster, 600100000, 2),
+    Platform(1, LevelType.increment, 141200000, 2),
+  ]),
+  Level(178, [
+    Platform(3, LevelType.monster, 698400000, 2),
+    Platform(1, LevelType.increment, 232800000, 2),
+  ]),
+  Level(179, [
+    Platform(1, LevelType.energy, 1, 1),
+    Platform(2, LevelType.monster, 794220000, 2),
+    Platform(1, LevelType.increment, 341600000, 2),
+  ]),
+  Level(180, [
+    Platform(1, LevelType.increment, 140850000, 2),
+    Platform(2, LevelType.monster, 901440000, 2),
+    Platform(1, LevelType.increment, 341600000, 2),
+  ]),
+  Level(181, [
+    Platform(3, LevelType.monster, 1009000000, 3),
+    Platform(1, LevelType.dec, 2, 1),
+  ]),
+  Level(182, [
+    Platform(1, LevelType.minus, 228000000, 2),
+    Platform(3, LevelType.monster, 1140000000, 3),
+  ]),
+  Level(183, [
+    Platform(1, LevelType.monster, 1125000000, 3),
+    Platform(2, LevelType.energy, 1, 1),
+    Platform(1, LevelType.increment, 250000000, 3),
+  ]),
+  Level(184, [
+    Platform(1, LevelType.increment, 414000000, 3),
+    Platform(3, LevelType.increment, 276000000, 3),
+  ]),
+  Level(185, [
+    Platform(4, LevelType.monster, 1510000000, 3),
+  ]),
 ];
 
 void main() {
   String input =
-      '141 2m145602 2i62402 3q22802 1m182402 1m225902 3q25102 3i82802 1e11 4m304002 2i33402 2e11 3m257602 1m294402 1i40402 2m404002 1e11 3i44502 1m356002 4m489002 3i80702 1u21 3m532802 1m1006402 1i65102 3q455702 3m644402 1i71602 4m788002 1m606902 3i86702 1e11 2m477002 1m572402 1m735002 3i157502 1e11 2i157502 1m747502 4m1613';
+      '161 2q308002 2d21 1d21 3q308002 2q372002 2d21 1q204002 2q408002 1d21 1e11 2m1350002 1i1575002 2q247002 2i274002 1i2176002 3u21 2e11 2i2392002 1u21 3m3290002 4m3620002 2m2786002 2i1194002 3q438002 1m3504002 1m4138002 3q482002 3i1590002 1e11 4m5830002 1q1926002 2m5136002 1i963002 1u21 2m6001002 1i1412002 3m6984002 1i2328002 1e11 2m7942202 1i3416002 1i1408502 2m9014402 1i3416002 3m10093 1d21 1q2280002 3m11403 1m11253 2e11 1i2503 1i4143 3i2763 4m15103';
+  // '141 2m145602 2i62402 3q22802 1m182402 1m225902 3q25102 3i82802 1e11 4m304002 2i33402 2e11 3m257602 1m294402 1i40402 2m404002 1e11 3i44502 1m356002 4m489002 3i80702 1u21 3m532802 1m1006402 1i65102 3q455702 3m644402 1i71602 4m788002 1m606902 3i86702 1e11 2m477002 1m572402 1m735002 3i157502 1e11 2i157502 1m747502 4m1613';
   // '121 1q10702 2m21502 1e11 1u31 3u21 3m52202 1m37302 3e11 1i12302 1m67802 3i4522 2d21 2q39702 2e11 2m49202 1m69102 2m60102 1i12002 2i13202 2q9915001 4m72702 3i12002 1i8002 1q4402 2m79202 1m66002 1e11 2i9682 1m77402 1m95402 3i21202 4m117002 2q38702 2d21 2q42602 2q28402 3e11 1m62402 1e11 3m86002 4m121702';
 
   // String d41to61 =

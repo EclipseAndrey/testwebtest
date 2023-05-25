@@ -1,3 +1,4 @@
+import 'package:intl/intl.dart';
 import 'package:testwebtest/functions/get_positions_platform.dart';
 import 'package:testwebtest/models/level.dart';
 import 'package:testwebtest/models/level_select.dart';
@@ -41,7 +42,8 @@ VariantResult goPath(
       case LevelType.increment:
         {
           bs = bs + p.dmg;
-          message = ("Боевая сила увеличена на ${p.dmg} => BS $bs");
+          message =
+              ("Боевая сила увеличена на ${NumberFormat.compact().format(p.dmg)} => BS ${NumberFormat.compact().format(bs)}");
           if (test) print(message);
           messages.add(message);
 
@@ -50,7 +52,7 @@ VariantResult goPath(
       case LevelType.upp:
         {
           bs = bs * p.dmg;
-          message = ("Боевая сила увеличена в ${p.dmg} раз => BS $bs");
+          message = ("Боевая сила увеличена в ${p.dmg} разa => BS ${NumberFormat.compact().format(bs)}");
           if (test) print(message);
           messages.add(message);
 
@@ -60,7 +62,8 @@ VariantResult goPath(
         {
           if (bs >= p.dmg) {
             bs -= p.dmg;
-            message = ("Боевая сила уменьшена на ${p.dmg} => BS $bs");
+            message =
+                ("Боевая сила уменьшена на ${NumberFormat.compact().format(p.dmg)} => BS ${NumberFormat.compact().format(bs)}");
             if (test) print(message);
             messages.add(message);
 
@@ -76,7 +79,7 @@ VariantResult goPath(
       case LevelType.dec:
         {
           bs = bs ~/ p.dmg;
-          message = ("Боевая сила уменьшена в ${p.dmg} раз => BS $bs");
+          message = ("Боевая сила уменьшена в ${p.dmg} раз => BS ${NumberFormat.compact().format(bs)}");
           if (test) print(message);
           messages.add(message);
 
