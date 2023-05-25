@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:testwebtest/models/level.dart';
 import 'package:testwebtest/models/platform.dart';
 import 'package:testwebtest/models/type.dart';
@@ -369,11 +371,334 @@ List<Level> levels = [
   Level(80, [
     Platform(4, LevelType.monster, 61930, 1),
   ]),
+  Level(81, [
+    Platform(2, LevelType.increment, 6200, 1),
+    Platform(2, LevelType.energy, 1, 1),
+  ]),
+  Level(82, [
+    Platform(3, LevelType.monster, 47740, 1),
+    Platform(1, LevelType.monster, 54560, 1),
+  ]),
+  Level(83, [
+    Platform(1, LevelType.increment, 7500, 1),
+    Platform(2, LevelType.monster, 75000, 1),
+    Platform(1, LevelType.energy, 1, 1),
+  ]),
+  Level(84, [
+    Platform(3, LevelType.increment, 8250, 1),
+    Platform(1, LevelType.monster, 66000, 1),
+  ]),
+  Level(85, [
+    Platform(4, LevelType.monster, 90700, 1),
+  ]),
+  Level(86, [
+    Platform(1, LevelType.minus, 34930, 1),
+    Platform(2, LevelType.monster, 69860, 1),
+    Platform(1, LevelType.energy, 1, 1),
+  ]),
+  Level(87, [
+    Platform(1, LevelType.upp, 3, 1),
+    Platform(3, LevelType.upp, 2, 1),
+  ]),
+  Level(88, [
+    Platform(3, LevelType.monster, 169400, 1),
+    Platform(1, LevelType.monster, 1221000, 1),
+  ]),
+  Level(89, [
+    Platform(3, LevelType.energy, 1, 1),
+    Platform(1, LevelType.increment, 39900, 1),
+  ]),
+  Level(90, [
+    Platform(1, LevelType.monster, 219000, 1),
+    Platform(3, LevelType.increment, 14600, 1),
+  ]),
+  Level(91, [
+    Platform(2, LevelType.dec, 2, 1),
+    Platform(2, LevelType.minus, 128800, 1),
+  ]),
+  Level(92, [
+    Platform(2, LevelType.energy, 1, 1),
+    Platform(2, LevelType.monster, 159300, 1),
+  ]),
+  Level(93, [
+    Platform(1, LevelType.monster, 223100, 1),
+    Platform(2, LevelType.monster, 194000, 1),
+    Platform(1, LevelType.increment, 38800, 1),
+  ]),
+  Level(94, [
+    Platform(2, LevelType.increment, 42800, 1),
+    Platform(2, LevelType.minus, 32100, 1),
+  ]),
+  Level(95, [
+    Platform(4, LevelType.monster, 235000, 2),
+  ]),
+  Level(96, [
+    Platform(2, LevelType.increment, 12950, 1),
+    Platform(2, LevelType.increment, 181300, 1),
+  ]),
+  Level(97, [
+    Platform(2, LevelType.increment, 14250, 1),
+    Platform(2, LevelType.dec, 2, 1),
+  ]),
+  Level(98, [
+    Platform(2, LevelType.upp, 2, 1),
+    Platform(2, LevelType.increment, 219100, 1),
+  ]),
+  Level(99, [
+    Platform(2, LevelType.increment, 17250, 1),
+    Platform(2, LevelType.increment, 241500, 1),
+  ]),
+  Level(100, [
+    Platform(4, LevelType.monster, 530600, 1),
+  ]),
+  Level(101, [
+    Platform(2, LevelType.increment, 41700, 1),
+    Platform(2, LevelType.energy, 1, 1),
+  ]),
+  Level(102, [
+    Platform(3, LevelType.monster, 321300, 1),
+    Platform(1, LevelType.monster, 367200, 1),
+  ]),
+  Level(103, [
+    Platform(1, LevelType.increment, 50400, 1),
+    Platform(2, LevelType.monster, 50400, 1),
+    Platform(1, LevelType.energy, 1, 1),
+  ]),
+  Level(104, [
+    Platform(3, LevelType.increment, 55500, 1),
+    Platform(1, LevelType.monster, 444000, 1),
+  ]),
+  Level(105, [
+    Platform(4, LevelType.monster, 610000, 2),
+  ]),
+  Level(106, [
+    Platform(1, LevelType.energy, 1, 1),
+    Platform(2, LevelType.monster, 469700, 1),
+    Platform(1, LevelType.minus, 234850, 1),
+  ]),
+  Level(107, [
+    Platform(3, LevelType.upp, 2, 1),
+    Platform(1, LevelType.upp, 3, 1),
+  ]),
+  Level(108, [
+    Platform(1, LevelType.monster, 812000, 2),
+    Platform(3, LevelType.monster, 1130000, 2),
+  ]),
+  Level(109, [
+    Platform(1, LevelType.increment, 268200, 1),
+    Platform(3, LevelType.energy, 1, 1),
+  ]),
+  Level(110, [
+    Platform(3, LevelType.increment, 98300, 1),
+    Platform(1, LevelType.monster, 1470, 1),
+  ]),
+  Level(111, [
+    Platform(2, LevelType.minus, 864000, 2),
+    Platform(2, LevelType.dec, 2, 1),
+  ]),
+  Level(112, [
+    Platform(2, LevelType.monster, 1070000, 2),
+    Platform(2, LevelType.energy, 1, 1),
+  ]),
+  Level(113, [
+    Platform(1, LevelType.increment, 262000, 2),
+    Platform(2, LevelType.monster, 1310000, 2),
+    Platform(1, LevelType.monster, 1500000, 2),
+  ]),
+  Level(114, [
+    Platform(2, LevelType.minus, 216000, 2),
+    Platform(2, LevelType.increment, 288000, 2),
+  ]),
+  Level(115, [
+    Platform(4, LevelType.monster, 1580000, 2),
+  ]),
+  Level(116, [
+    Platform(1, LevelType.increment, 174000, 2),
+    Platform(3, LevelType.increment, 2610000, 2),
+  ]),
+  Level(117, [
+    Platform(1, LevelType.monster, 1440000, 2),
+    Platform(2, LevelType.monster, 1720000, 2),
+    Platform(1, LevelType.minus, 96000, 2),
+  ]),
+  Level(118, [
+    Platform(1, LevelType.monster, 1680000, 2),
+    Platform(2, LevelType.increment, 211000, 2),
+    Platform(1, LevelType.energy, 1, 1),
+  ]),
+  Level(119, [
+    Platform(3, LevelType.increment, 464000, 2),
+    Platform(1, LevelType.monster, 2080000, 2),
+  ]),
+  Level(120, [
+    Platform(4, LevelType.monster, 3080000, 2),
+  ]),
+  Level(121, [
+    Platform(1, LevelType.minus, 1070000, 2),
+    Platform(2, LevelType.monster, 2150000, 2),
+    Platform(1, LevelType.energy, 1, 1),
+  ]),
+  Level(122, [
+    Platform(1, LevelType.upp, 3, 1),
+    Platform(3, LevelType.upp, 2, 1),
+  ]),
+  Level(123, [
+    Platform(3, LevelType.monster, 5220000, 2),
+    Platform(1, LevelType.monster, 3730000, 2),
+  ]),
+  Level(124, [
+    Platform(3, LevelType.energy, 1, 1),
+    Platform(1, LevelType.increment, 1230000, 2),
+  ]),
+  Level(125, [
+    Platform(1, LevelType.monster, 6780000, 2),
+    Platform(3, LevelType.increment, 452000, 2),
+  ]),
+  Level(126, [
+    Platform(2, LevelType.dec, 2, 1),
+    Platform(2, LevelType.minus, 3970000, 2),
+  ]),
+  Level(127, [
+    Platform(2, LevelType.energy, 1, 1),
+    Platform(2, LevelType.monster, 4920000, 2),
+  ]),
+  Level(128, [
+    Platform(1, LevelType.monster, 6910000, 2),
+    Platform(2, LevelType.monster, 6010000, 2),
+    Platform(1, LevelType.increment, 1200000, 2),
+  ]),
+  Level(129, [
+    Platform(2, LevelType.increment, 1320000, 2),
+    Platform(2, LevelType.minus, 991500, 1),
+  ]),
+  Level(130, [
+    Platform(4, LevelType.monster, 7270000, 2),
+  ]),
+  Level(131, [
+    Platform(3, LevelType.increment, 1200000, 2),
+    Platform(1, LevelType.increment, 800000, 2),
+  ]),
+  Level(132, [
+    Platform(1, LevelType.minus, 440000, 2),
+    Platform(2, LevelType.monster, 7920000, 2),
+    Platform(1, LevelType.monster, 6600000, 2),
+  ]),
+  Level(133, [
+    Platform(1, LevelType.energy, 1, 1),
+    Platform(2, LevelType.increment, 968000, 2),
+    Platform(1, LevelType.monster, 7740000, 2),
+  ]),
+  Level(134, [
+    Platform(1, LevelType.monster, 9540000, 2),
+    Platform(3, LevelType.increment, 2120000, 2),
+  ]),
+  Level(135, [
+    Platform(4, LevelType.monster, 11700000, 2),
+  ]),
+  Level(136, [
+    Platform(2, LevelType.minus, 3870000, 2),
+    Platform(2, LevelType.dec, 2, 1),
+  ]),
+  Level(137, [
+    Platform(2, LevelType.minus, 4260000, 2),
+    Platform(2, LevelType.minus, 2840000, 2),
+  ]),
+  Level(138, [
+    Platform(3, LevelType.energy, 1, 1),
+    Platform(1, LevelType.monster, 6240000, 2),
+  ]),
+  Level(139, [
+    Platform(1, LevelType.energy, 1, 1),
+    Platform(3, LevelType.monster, 8600000, 2),
+  ]),
+  Level(140, [
+    Platform(4, LevelType.monster, 12170000, 2),
+  ]),
+  Level(141, [
+    Platform(2, LevelType.monster, 14560000, 2),
+    Platform(2, LevelType.increment, 6240000, 2),
+  ]),
+  Level(142, [
+    Platform(3, LevelType.minus, 2280000, 2),
+    Platform(1, LevelType.monster, 18240000, 2),
+  ]),
+  Level(143, [
+    Platform(1, LevelType.monster, 22590000, 2),
+    Platform(3, LevelType.minus, 2510000, 2),
+  ]),
+  Level(144, [
+    Platform(3, LevelType.increment, 8280000, 2),
+    Platform(1, LevelType.energy, 1, 1),
+  ]),
+  Level(145, [
+    Platform(4, LevelType.monster, 30400000, 2),
+  ]),
+  Level(146, [
+    Platform(2, LevelType.increment, 3340000, 2),
+    Platform(2, LevelType.energy, 1, 1),
+  ]),
+  Level(147, [
+    Platform(3, LevelType.monster, 25760000, 2),
+    Platform(1, LevelType.monster, 29440000, 2),
+  ]),
+  Level(148, [
+    Platform(1, LevelType.increment, 4040000, 2),
+    Platform(2, LevelType.monster, 40400000, 2),
+    Platform(1, LevelType.energy, 1, 1),
+  ]),
+  Level(149, [
+    Platform(3, LevelType.increment, 4450000, 2),
+    Platform(1, LevelType.monster, 35600000, 2),
+  ]),
+  Level(150, [
+    Platform(4, LevelType.monster, 48900000, 2),
+  ]),
+  Level(151, [
+    Platform(3, LevelType.increment, 8070000, 2),
+    Platform(1, LevelType.upp, 2, 1),
+  ]),
+  Level(152, [
+    Platform(3, LevelType.monster, 53280000, 2),
+    Platform(1, LevelType.monster, 100640000, 2),
+  ]),
+  Level(153, [
+    Platform(1, LevelType.increment, 6510000, 2),
+    Platform(3, LevelType.minus, 45570000, 2),
+  ]),
+  Level(154, [
+    Platform(3, LevelType.monster, 64440000, 2),
+    Platform(1, LevelType.increment, 7160000, 2),
+  ]),
+  Level(155, [
+    Platform(4, LevelType.monster, 78800000, 2),
+  ]),
+  Level(156, [
+    Platform(1, LevelType.monster, 60690000, 2),
+    Platform(3, LevelType.increment, 8670000, 2),
+  ]),
+  Level(157, [
+    Platform(1, LevelType.energy, 1, 1),
+    Platform(2, LevelType.monster, 47700000, 2),
+    Platform(1, LevelType.monster, 57240000, 2),
+  ]),
+  Level(158, [
+    Platform(1, LevelType.monster, 73500000, 2),
+    Platform(3, LevelType.increment, 15750000, 2),
+  ]),
+  Level(159, [
+    Platform(1, LevelType.energy, 1, 1),
+    Platform(2, LevelType.increment, 15750000, 2),
+    Platform(1, LevelType.monster, 74750000, 2),
+  ]),
+  Level(160, [
+    Platform(4, LevelType.monster, 161000000, 3),
+  ]),
 ];
 
 void main() {
   String input =
-      '61 2i25111 2m58591 1m73681 3q9211 3q10101 1m90901 1e11 3i33301 4m123001 2d21 2q27001 3q29601 1d21 2d21 2q32601 1d21 2q35801 1q17901 1i137901 2m118201 1e11 2i21701 2q21701 3u21 1i191201 2i210401 2e11 3m289001 1u21 4m318001 2i35001 2m245001 1m231001 2m192501 1e11 3i63451 1m296101 1m302901 2i46601 1e11 4m619301';
+      '141 2m145602 2i62402 3q22802 1m182402 1m225902 3q25102 3i82802 1e11 4m304002 2i33402 2e11 3m257602 1m294402 1i40402 2m404002 1e11 3i44502 1m356002 4m489002 3i80702 1u21 3m532802 1m1006402 1i65102 3q455702 3m644402 1i71602 4m788002 1m606902 3i86702 1e11 2m477002 1m572402 1m735002 3i157502 1e11 2i157502 1m747502 4m1613';
+  // '121 1q10702 2m21502 1e11 1u31 3u21 3m52202 1m37302 3e11 1i12302 1m67802 3i4522 2d21 2q39702 2e11 2m49202 1m69102 2m60102 1i12002 2i13202 2q9915001 4m72702 3i12002 1i8002 1q4402 2m79202 1m66002 1e11 2i9682 1m77402 1m95402 3i21202 4m117002 2q38702 2d21 2q42602 2q28402 3e11 1m62402 1e11 3m86002 4m121702';
 
   // String d41to61 =
   //     ' 1u21 3i1861 1m23291 3m12331 3q10571 1i1511 1i1661 3m14941 4m18201 3i3001 1i2001 1q1101 2m19801 1m16501 1e11 2i2431 1m19441 1m24031 3i5341 4m2930 1q11311 2m2261 1e11 1u31 3u21 3m64741 1m39101 3e11 1i12901 1m70951 3i4731 2d21 2q41601 2e11 2m51451 1m72431 2m62901 1i12581 2i13841 2q10381 4m76101';
@@ -420,7 +745,7 @@ void main() {
     int dmg = int.parse(platformString.substring(2, platformString.length - 1));
     int index = int.parse(platformString[platformString.length - 1]);
 
-    Platform platform = Platform(size, type, dmg * index, index);
+    Platform platform = Platform(size, type, dmg * pow(1000, index - 1).toInt(), index);
     currentPlatforms.add(platform);
     currentSize += size;
 

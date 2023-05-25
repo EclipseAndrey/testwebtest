@@ -109,11 +109,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 title: 'Energy ',
                 text: resultSelect!.energy.toString(),
               ),
-            if (resultSelect != null)
-              InfoRow(
-                title: 'Levels',
-                text: resultSelect!.levelsSelect.toString(),
-              ),
+            // if (resultSelect != null)
+            //   InfoRow(
+            //     title: 'Levels',
+            //     text: resultSelect!.levelsSelect.toString(),
+            //   ),
             if (resultSelect != null)
               Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -193,7 +193,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text(NumberFormat.compact().format(variants[index].totalBS)),
+                          child: Text(NumberFormat.decimalPattern().format(variants[index].totalBS)),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),

@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:testwebtest/models/level.dart';
 import 'package:testwebtest/models/platform.dart';
@@ -25,7 +27,7 @@ class LevelWidget extends StatelessWidget {
             (index) => PlatformWidget(
               platform: level.platforms[index],
               initSize: initSize,
-              selected: index == indexSelect,
+              selected: indexSelect == null ? null : index == indexSelect,
             ),
           ),
         ),
@@ -37,7 +39,7 @@ class LevelWidget extends StatelessWidget {
 class PlatformWidget extends StatelessWidget {
   final double initSize;
   final Platform platform;
-  final bool selected;
+  final bool? selected;
   const PlatformWidget({required this.selected, required this.platform, required this.initSize, Key? key})
       : super(key: key);
 
@@ -84,31 +86,34 @@ class PlatformWidget extends StatelessWidget {
         break;
     }
 
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 16.0),
-      child: Container(
-        height: platformH,
-        width: initSize,
-        decoration: BoxDecoration(
-          color: Colors.grey[300],
-          borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(
-              color: selected ? Colors.red : Colors.grey[500] ?? Colors.grey,
-              spreadRadius: 1,
-              offset: const Offset(4, 4),
-              blurRadius: 15,
-            ),
-            BoxShadow(
-              color: Colors.white,
-              spreadRadius: 1,
-              offset: Offset(-4, -4),
-              blurRadius: 15,
-            ),
-          ],
-        ),
-        child: PlatformContent(
-          platform: platform,
+    return Opacity(
+      opacity: selected ?? true ? 1 : 0.5,
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 16.0),
+        child: Container(
+          height: platformH,
+          width: initSize,
+          decoration: BoxDecoration(
+            color: Colors.grey[300],
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: [
+              BoxShadow(
+                color: selected ?? false ? Colors.red : Colors.grey[500] ?? Colors.grey,
+                spreadRadius: 1,
+                offset: const Offset(4, 4),
+                blurRadius: 15,
+              ),
+              const BoxShadow(
+                color: Colors.white,
+                spreadRadius: 1,
+                offset: Offset(-4, -4),
+                blurRadius: 15,
+              ),
+            ],
+          ),
+          child: PlatformContent(
+            platform: platform,
+          ),
         ),
       ),
     );
@@ -166,6 +171,25 @@ class PlatformContent extends StatelessWidget {
         break;
     }
 
+    String text = platform.dmg.toString();
+    if (platform.exp > 1) {
+      text = (platform.dmg / (pow(1000, platform.exp - 1))).toStringAsFixed(0);
+      switch (platform.exp) {
+        case 2:
+          text += 'k';
+          break;
+        case 3:
+          text += 'm';
+          break;
+        case 4:
+          text += 'b';
+          break;
+        case 5:
+          text += 'q';
+          break;
+      }
+    }
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -181,7 +205,7 @@ class PlatformContent extends StatelessWidget {
               height: 12,
             ),
             Text(
-              prefix + platform.dmg.toString(),
+              prefix + text,
               textAlign: TextAlign.center,
               style: TextStyle(color: color, fontWeight: FontWeight.w600),
             ),
